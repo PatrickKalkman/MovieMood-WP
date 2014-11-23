@@ -1,0 +1,52 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MovieMood.Views.HelpPageView"
+    Style="{StaticResource DefaultPage}"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{Binding BackgroundImageBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationName" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="about" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" Margin="12,0,0,0">
+                        Movie Mood suggest a movie depending on your mood.
+                    </TextBlock>
+                    <Image Source="../Assets/Help/Help-1.png" Width="300" Margin="0, 12, 0, 0"/>
+                    <TextBlock TextWrapping="Wrap" Margin="12,24,0,0">
+                        In the main screen you can select your mood by tapping the image that corresponds to your mood.
+                    </TextBlock>
+                    <Image Source="../Assets/Help/Help-2.png" Width="300" Margin="0, 12, 0, 0"/>
+                    <TextBlock TextWrapping="Wrap" Margin="12,12,0,0">
+                        Movie Mood suggests three movies based on your mood selection. By pulling the list down and releasing it the list can be refreshed.
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Margin="12,12,0,0">
+                        When you select a movie from the suggestions it plays an trailer of that suggestion.
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
