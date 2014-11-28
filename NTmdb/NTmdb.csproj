@@ -128,8 +128,8 @@
     <Compile Include="TmdModel\Movie\TmdbMovieRatingRequest.cs" />
     <Compile Include="TmdModel\Base\TmdbPersonBase.cs" />
     <Compile Include="TmdModel\Review\StatusResponse\TmdbStatusResponse.cs" />
-    <Compile Include="TmdModel\Movie\Release\TmdbRelease.cs" />
-    <Compile Include="TmdModel\Movie\Release\TmdbReleases.cs" />
+    <Compile Include="TmdModel\Movie\TmdbRelease\TmdbRelease.cs" />
+    <Compile Include="TmdModel\Movie\TmdbRelease\TmdbReleases.cs" />
     <Compile Include="TmdModel\Review\TmdbReview.cs" />
     <Compile Include="TmdModel\Review\TmdbReviewPreview.cs" />
     <Compile Include="TmdModel\Movie\TmdbMovieReviews.cs" />
