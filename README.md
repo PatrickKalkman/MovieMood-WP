@@ -1,5 +1,6 @@
 MovieMood-WP
 ============
+[![Build status](https://ci.appveyor.com/api/projects/status/b8d6kavo70obww3f/branch/master?svg=true)](https://ci.appveyor.com/project/kalkie/moviemood-wp)
 
 ![Movie Mood](http://cdn.marketplaceimages.windowsphone.com/v8/images/af22deea-f42f-41a3-9cc0-1843cf7953a2?imageType=ws_icon_large)
 
